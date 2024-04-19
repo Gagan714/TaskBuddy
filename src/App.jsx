@@ -65,8 +65,8 @@ function App() {
     <div>
       <Navbar />
       <div className="container flex justify-center items-center py-3">
-      <div className="box h-[85vh] overflow-y-scroll w-1/2 bg-slate-200 rounded-xl" style={{ "-ms-overflow-style": "none", "scrollbar-width": "none" }}>
-          <div className="font-bold px-28 py-1 text-2xl">
+      <div className="box h-[85vh] overflow-y-scroll md:w-1/2 bg-slate-200 rounded-xl" style={{ "-ms-overflow-style": "none", "scrollbar-width": "none" }}>
+          <div className="font-bold md:px-28 py-1 text-2xl">
             TaskBuddy - Manage Your Tasks At One Place
           </div>
           <div className="font-bold px-2 py-2 text-xl">Add a Todo Task</div>
@@ -79,7 +79,7 @@ function App() {
             />
             <button
               onClick={handleSave}
-              className="border border-purple-600 px-3 rounded-2xl ml-2 text-white bg-purple-700"
+              className="border border-blue-500 px-3 rounded-2xl ml-2 text-white bg-blue-700"
             >
               Save
             </button>
@@ -100,13 +100,13 @@ function App() {
               <div className="flex">
                 <button
                   onClick={() => handleEdit(item.id)}
-                  className="border border-purple-600 px-3 rounded-2xl ml-1 text-white bg-purple-700"
+                  className="border border-blue-600 px-3 rounded-2xl ml-1 text-white bg-blue-700"
                 >
                   <BiSolidEdit />
                 </button>
                 <button
                   onClick={() => handleDelete(item.id)}
-                  className="border border-purple-600 px-2 rounded-2xl ml-1 text-white bg-purple-700"
+                  className="border border-blue-600 px-2 rounded-2xl ml-1 text-white bg-blue-700"
                 >
                  <MdDelete />
                 </button>
